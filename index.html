@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Bootstrap Form</title>
+</head>
+<body>
+    <div class="container">
+    <div class="bg-light"><h1>Payment Form Example</h1></div>
+    <div class="bg-danger text-white">Some Fields are missing</div>
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Credit Card #</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="xxxx xxxx xxxx xxxx">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">CCV</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="xxx">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Amount</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="$$$">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">First Name</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Last Name</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Doe">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose State</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <footer class="bg-light">
+            <div class="form-group">
+            </div>
+            <div class="form-check"></div>
+            <div>
+                <div class="card">
+                  <div class="card-header p-0">
+                    <h2 class="mb-0">
+                      <button class="btn btn-light btn-block text-left p-3 rounded-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span>We Accept</span>
+                          <div class="icons">
+                            <img src="https://i.imgur.com/2ISgYja.png" width="30">
+                            <img src="https://i.imgur.com/W1vtnOV.png" width="30">
+                            <img src="https://i.imgur.com/35tC99g.png" width="30">
+                            <img src="https://i.imgur.com/2ISgYja.png" width="30">
+                          </div>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+              </div>
+            </div>  
+            <input type="text" name="career[message]" class="form-control" tabindex="4" 
+       placeholder="Write your details" required>
+          </footer>
+            <button type="submit" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Send</button></form>
+    </div class="container">
+</body>
+</html>

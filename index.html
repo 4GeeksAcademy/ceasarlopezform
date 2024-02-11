@@ -6,35 +6,49 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Bootstrap Form</title>
 </head>
+<style>
+  div.message{
+    display: flexbox;
+    padding-left: 650px;
+  }
+  div.button{
+    display: flexbox;
+    padding-left: 950px;
+  }
+</style>
 <body>
     <div class="container">
     <div class="bg-light"><h1>Payment Form Example</h1></div>
-    <div class="bg-danger text-white">Some Fields are missing</div>
+    <div class="alert alert-danger" role="alert">Some Fields are missing</div>
     <form>
+      <div class="topinfo">
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-4">
             <label for="inputEmail4">Credit Card #</label>
             <input type="email" class="form-control" id="inputEmail4" placeholder="xxxx xxxx xxxx xxxx">
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-2">
             <label for="inputPassword4">CCV</label>
             <input type="password" class="form-control" id="inputPassword4" placeholder="xxx">
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-4">
             <label for="inputPassword4">Amount</label>
             <input type="password" class="form-control" id="inputPassword4" placeholder="$$$">
           </div>
         </div>
-        <div class="form-group">
+      </div> 
+      <div class="form-row"> 
+        <div class="form-group col-md-4">
           <label for="inputAddress">First Name</label>
           <input type="text" class="form-control" id="inputAddress" placeholder="John">
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-4">
           <label for="inputAddress2">Last Name</label>
           <input type="text" class="form-control" id="inputAddress2" placeholder="Doe">
         </div>
+      </div>
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group">
             <label for="inputCity">City</label>
             <input type="text" class="form-control" id="inputCity">
           </div>
@@ -51,9 +65,9 @@
           </div>
         </div>
         <footer class="bg-light">
+          <div class="form-row">
             <div class="form-group">
             </div>
-            <div class="form-check"></div>
             <div>
                 <div class="card">
                   <div class="card-header p-0">
@@ -73,11 +87,16 @@
                   </div>
               </div>
             </div>  
-            <input type="text" name="career[message]" class="form-control" tabindex="4" 
-       placeholder="Write your details" required>
+            <div class="message">
+                <input type="text" name="career[message]" class="form-control" tabindex="4" 
+                  placeholder="Write your details" required>
+            </div>
+          </div>
           </footer>
+          <div class="button">
             <button type="submit" class="btn btn-secondary">Cancel</button>
             <button type="submit" class="btn btn-primary">Send</button></form>
+          </div>
     </div class="container">
 </body>
 </html>
